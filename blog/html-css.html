@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Technical Blog - CSS Concepts</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+   } else {
+    x.className = "topnav";
+   }
+  }
+  </script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <h1>Technical Blog</h1>
+  </header>
+  <div class="topnav" id="myTopnav">
+    <a href="../home.html">home</a>
+    <a class="active" href="blog-home.html">blog</a>
+    <a href="#interests">interests</a>
+    <a href="#ehoamā">e hoa mā</a>
+    <a href="../home.html#aboutme">about me</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars" style="font-size: 1.75em;"></i>
+    </a>
+  </div>
+  <div>
+    <h2>CSS Concepts</h2>
+    <h3>Topic: What does it mean to display inline vs inline blocks?</h3>
+    <em>
+    <p>Everything has a default way of operating. Even you and I!</p>
+    <p>I brush my teeth a certain way, starting from my back left and then moving around the front then to my right. All this without thinking.</p>
+    <p>When I drink fizzy I always hiccup once right away on my first sip.</p>
+    <p>Some of these default things we do can be changed with some effort and specificity.</p>
+    <p>If my dentist told me I needed to pay particular attention to my right back teeth, and that I should begin brushing from right to left, that would certainly be possible with a little conscious effort and instruction from my brain. The specificity creates the difference between 'I need to change the way I brush my teeth from the way I'm currently doing it', to 'I need to start brushing from the right and work my way to the left.'</p>
+    <p>(My hiccup thing however, can't be changed in the same way. But it doesn't really affect my life too much and also isn't that relevant to what I'm explaining.)</p>
+    <p>You can see I'm heading towards the meaningful part of this explanation... so let's go there:</p>
+    </em>
+    <ul>
+      <li>A page is made up of elements, like headings, text, images etc. And these have a default (initial) way of laying out on the page. For example, they follow the order that I list elements, top to bottom and left to right (as opposed to bottom to top, that would be rather confusing, but still possible!)</li>
+      <li>We can manipulate the layout of these elements using CSS by assigning a specific instruction or code.</li>
+      <li>But first we'd need to understand what the default way is, so that we can be specific and conscious about what change we are implementing. This is when we get to 'Normal Flow'</li>
+    </ul>
+  <div>
+    <h3>Normal Flo'</h3>
+    <img src="../images/Floridanormal.png" alt="Normal Flo' Rida" style="width:300px; height:auto;">
+    <h4>Inline</h4>
+    <ul>
+      <li>Inline elements mean they follow the content that is given. This means that meaning width and height properties can’t be set. It can start alongside the previous element as long as there is space inside the width and then it can ‘overflow’ to the next line.</li>
+      <li>A good way to remember how this works is to think of the element as 'falling in line'. It follows the lines of the content.</li>
+    </ul>
+    <h4>Block</h4>
+    <ul>
+      <li>A block element takes up the whole horizontal space of what it’s contained by. The vertical space is determined by its content. Therefore it makes a block shape! A new block element starts below the previous one, and on a new line. Width and height properties can be changed for the block.</li>
+    </ul>
+    <img src="../images/block-inline.png" alt="example of block and inline">
+  </div>
+  <div>
+    <h3>Not normal flo'</h3>
+    <img src="../images/Floridanot.png" alt="Normal Flo' Rida" style="width:300px; height:auto;">
+    <ul>
+      <li>You can use the <code>display:</code> property to change the behaviour of the outer display (outside box) as well as the inner contents.</li>
+      <code>
+        <p>display:block</p>
+        <p>display:inline</p>
+        <p>display:inline-block</p>
+      </code>
+      <li>Inline-block operates the same as inline in terms of layout, however you are able to set the width and height.</li>
+      <li>Inline-block also respects the boundaries of top and bottom margins/paddings which inline does not</li>
+    </ul>
+    <p>See the below example of buttons using <code>display:</code> inline vs <code>display:inline-block</code></p>  
+    <img src="../images/inline-block.png" alt="example of inline-block">
+  </div>
+  <div>
+    <button type="button" onclick="history.back(-1)">Go Back</button>
+  </div>
+</body>

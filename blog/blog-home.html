@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog home</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+   } else {
+    x.className = "topnav";
+   }
+  }
+  </script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <img src="../images/Saesworld.gif" alt="Sae's World Logo with smiley face" class="imagecenter">
+  </header>
+  <div class="topnav" id="myTopnav">
+    <a href="../home.html">home</a>
+    <a class="active" href="blog/blog-home.html">blog</a>
+    <a href="#interests">interests</a>
+    <a href="#ehoamā">e hoa mā</a>
+    <a href="../home.html#aboutme" class="split"'>about me</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars" style="font-size: 1.75em;"></i>
+    </a>
+  </div>
+
+  <div>
+     <ul>
+       <a href=html-css.html><li>Technical Blog - CSS Concepts</li>
+       </a>
+     </ul>
+  </div>
+</body>
+</html>
