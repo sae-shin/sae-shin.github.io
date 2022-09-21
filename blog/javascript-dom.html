@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Technical Blog - JS Fundamentals</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+   } else {
+    x.className = "topnav";
+   }
+  }
+  </script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Fundamentals</h1>
+  </header>
+  <div class="topnav" id="myTopnav">
+    <a href="../home.html">home</a>
+    <a class="active" href="blog-home.html">blog</a>
+    <a href="#interests">interests</a>
+    <a href="#ehoamā">e hoa mā</a>
+    <a href="../home.html#aboutme">about me</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars" style="font-size: 1.75em;"></i>
+    </a>
+  </div>
+  <div>
+    <h2>Hi friend, can you explain to me …</h2>
+    <h3>...Javascript and its relationship to HTML and CSS?</h3>
+    <em>
+    <p>A sequel to the <a href="story.html">story of HTML and CSS:</a></p>
+    <p>"While Harry and Chidi spent their next years building their beautiful rich, life, they found as they grew older that something important was missing in their lives - a child.</p>
+    <p>So they adopted young Jav.</p>
+    <p>Jav completely changed Harry and Chidi’s world and brought life to things that previously seemed grey and boring for them. Having Jav meant that they were shown a new way of existing.</p>
+    <p>Jav was the type of person that could walk into any room and immediately liven it up, could pick up any object and make you see it in a new light, could take any conversation and inspire new ideas.</p>
+    <p>As well as being a incredibly adept at mathematics, Jav would later grow up to be an incredibly talented and successful playwright, writing scripts that were filled with complexity and action.</p>
+    <p>heir happy little home became filled with Jav’s work and together as a little family, the three of them lived happily ever after.“</p>
+    </em>
+  </div>
+  <div>
+    <h3>...control flow and loops?</h3>
+    <p>Control flow is how the code in your Javascript is read and run. Think of control flow like playing a record.</p>
+    <img src="../images/turntable.webp" alt="turntable with vinyl record" style="width:300px; height:auto;">
+    <p>The needle follows the grooves of your vinyl record as it spirals in - going in one direction and reading all of the information as it goes.</p>
+    <p>Occasionally your needle may come across a scratch in your record, meaning that the song it is playing will skip or…you guessed it - loop and repeat.</p>
+  </div>
+  <div>
+    <h3>...the DOM?</h3>
+    <h4>What is the DOM?</h4>
+      <ul>
+      <li>it is the structure that represents the documentation of all objects for your web page - and is also an interface.</li>
+      <li>the hierarchy goes <code>window > document > html > body > div > h1/p/img/div </code></li>
+      <li>The DOM is built using multiple APIs that work together.</li>
+    </ul>
+    <h4>How does it interact with HTML and CSS?</h4>
+      <ul>
+        <li>node mapping reveals that everything that we use in HTML has an object representation and for all elements there are different types (i.e. HTMLAnchorElement)</li>
+        <li>we can access all of these elements and then modify them, and add them to make them interact (Javascript)</li>
+        </ul>
+    <h4>How  do you access the DOM?</h4>
+    <ul>
+        <li>When you create a script, whether inline in a script element or included in the web page, you can immediately begin using the API for the document or windowobjects to manipulate the document itself, or any of the various elements in the web page.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>...the difference between accessing data from arrays and objects?</h3>
+    <p>Objects can be anything and can be assigned properties like characteristic.</p>
+    <img src="../images/Snow-White.webp" alt="Snow White and the Seven Dwarves" style="width:300px; height:auto;">
+    <p>For example Snow White is a princess, who likes to clean, and her favourite fruit is apple.</p>
+    <pre><code>
+      princess = {
+
+      name: ‘Snow White’,
+      hobby: ‘cleaning’     
+      favouriteFruit: ‘apple’</code></pre>
+    <p>With objects you can access data by using dot notation or bracket notation. Both of these methods is like a filing system and gets you to specify which property you are wanting.</p>
+    <pre><code>
+      // Dot notation
+      objectPrincess.favouriteFruit // returns 'apple'//
+      
+      Bracket notation
+      person['favouriteFruit'] // returns 'apple'</code></pre>
+
+      <p>Arrays can store multiple items as below, as if they are in a queue</p>
+      <pre><code>sevenDwarves = [’Grumpy’, ‘Dopey’, ‘Bashful’, ‘Happy’, ‘Sleepy’, ‘Doc’, ‘Sneezy’];</code></pre>
+      <p>Imagine they are all in a queue at McDonald’s and as ‘Grumpy’ was first in the queue, his order number is [0]. Dopey has order number [1], and so on until Sneezy at [6]. </p>
+      <p>To access something in an array, you can call its position in the queue, like calling a McDonald’s order.</p>
+      <code>sevenDwarves[4]; // returns ‘Sleepy’.</code>
+  </div>
+  <div>
+    <h3>...functions and why they are helpful.</h3>
+    <p>Functions in JavaScript allow us to perform mini tasks or calculate things for us. They are little worker bees that can find something for us, and be able to return information or, or change things.</p>
+    <p>First a function gets defined - we state what it is or what it does - and then once called, it performs its duty.</p>
+  </div>
+  <div>
+    <button type="button" onclick="history.back(-1)">Go Back</button>
+  </div>
+</body>
+</html>
