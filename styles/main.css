@@ -109,12 +109,13 @@ button:hover {
 h1 {
   display: block;
   white-space:nowrap;
-  font-size: 80px;
+  font-size: 7vw;
   color:seagreen;
   margin-left: 5px;
   font-family: 'Rampart One', cursive;
   margin:auto;
   padding: 50px 5px;
+  
  }
 
 h2 {
