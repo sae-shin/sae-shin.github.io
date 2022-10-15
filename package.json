@@ -1,0 +1,23 @@
+{
+  "name": "sae-shin.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sae-shin/sae-shin.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sae-shin/sae-shin.github.io/issues"
+  },
+  "homepage": "https://github.com/sae-shin/sae-shin.github.io#readme",
+  "dependencies": {
+    "jest": "^29.2.0",
+    "prompt": "^1.3.0"
+  }
+}
